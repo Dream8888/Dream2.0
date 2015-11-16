@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="touchBtn" destination="pqd-34-Ud2" id="OB2-13-iab"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指纹识别" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOJ-1R-ZxQ">
+                    <rect key="frame" x="45" y="81" width="235" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="kES-Bc-FLi"/>
+                        <constraint firstAttribute="width" constant="235" id="u0Y-M5-iPc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqd-34-Ud2">
+                    <rect key="frame" x="53" y="240" width="214" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88" id="9UT-fe-Ct9"/>
+                        <constraint firstAttribute="width" constant="214" id="p7u-ak-SAf"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="touchBtn:" destination="-1" eventType="touchUpInside" id="Kop-7j-Ad4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pqd-34-Ud2" firstAttribute="top" secondItem="ZOJ-1R-ZxQ" secondAttribute="bottom" constant="105" id="29U-bn-BPV"/>
+                <constraint firstAttribute="trailing" secondItem="ZOJ-1R-ZxQ" secondAttribute="trailing" constant="40" id="EeW-0j-9Lm"/>
+                <constraint firstAttribute="centerX" secondItem="pqd-34-Ud2" secondAttribute="centerX" id="IEX-KG-QGd"/>
+                <constraint firstItem="ZOJ-1R-ZxQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="81" id="MQK-WL-qPi"/>
+                <constraint firstAttribute="centerY" secondItem="pqd-34-Ud2" secondAttribute="centerY" id="kjs-zk-Rq9"/>
+                <constraint firstItem="ZOJ-1R-ZxQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="45" id="rfP-S3-9qq"/>
+            </constraints>
+            <point key="canvasLocation" x="73" y="321"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
